@@ -2,24 +2,24 @@ body{
   background-color: lightblue;
   margin: 15px;
   margin-top: 50px;
+  font-family: Helvetica;
 }
 
 .login-form
 .login-form *{
   box-sizing: border-box;
-  font-family: sans-serif:
 }
 
 .login-form{
   max-width: 350px;
   margin: 0 auto;
-  border-radius: 5px:
+  border-radius: 5px;
   overflow: hidden;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
 }
 
 .login-form__logo-container{
-    padding: 30px;
+    padding: 10px;
     background: white;
 }
 
@@ -29,23 +29,36 @@ body{
   margin: 0 auto;
 }
   
-  
+.container{
+  padding: 10px;
+  margin-bottom: 10px;
+}  
+
+p {
+  margin-bottom: 5px;  
+}
+
+.small {
+  font-size: 0.75em;
+}
+
 input[type=text], input[type=password] {
-  width: 50%;
+  width: 100%;
   padding: 12px 20px;
-  
+  border-radius: 5px;
   display: inline-block;
   border: 1px solid #ccc;
   box-sizing: border-box;
 }
+
 button {
   background-color: darkblue;
   color: white;
+  border-radius: 5px;
   padding: 14px 20px;
-  margin: 4px 0;
-  border: 5;
+  margin: 10px 0;
   cursor: pointer;
-  width: 30%;
+  width: 100%;
 }
 button:hover {
   opacity: 0.6;

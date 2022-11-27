@@ -12,8 +12,8 @@ function check() {
 function test() {
 
   let time = Date.now()
-  let user = document.getElementById("uname").value
-  let pass = document.getElementById("pword").value
+  let user = document.getElementById("apt_number").value
+  let pass = document.getElementById("password").value
   console.log({ time, user, pass })
 
 }
