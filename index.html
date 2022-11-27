@@ -1,59 +1,47 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <link href="style.css" rel="stylesheet" type="text/css" />
   <script src="./script.js"></script>
-  <script>
-    function check(){
-var apartment_number = document.getElementById("ATP").values;
-var password = document.getElementById("pword").values;
-if (apt == apartment_number && password == pword) {
-alert("logged in successfully");
-}else {
-
-alert("account doesnt exist");
-}
-}
-
-    
-  </script>
-  
 </head>
-  <body>
-    
+
+<body>
+
   <h1>Parkwood Apartments</h1>
   <h4>Laundry Calendar</h4>
 
-    <form class="login-form" action="./" method="POST">
-     <div class="login-form__logo-container">
-  <img class="login-form__logo" src="logo.png" alt="logo">
-     </div>
-    
-    
+  <form class="login-form" action="./" method="POST">
+    <div class="login-form__logo-container">
+      <img class="login-form__logo" src="logo.png" alt="logo">
+    </div>
+
+
     <label for="apt_number"><b>Apartment Number</b></label>
-       <br></br>
+    <br></br>
     <input id="apt_number" type="text" placeholder="Enter Apartment" name="apt_number" required>
-    <br/>
+    <br />
 
     <label for="password"><b>Password</b></label>
-       <br></br>
-    <input  id="password" type="password" placeholder="Enter Password" name="password" required>
-    <br/><br/>
+    <br></br>
+    <input id="password" type="password" placeholder="Enter Password" name="password" required>
+    <br /><br />
 
     <button type="submit" onclick="test()">Login</button>
-    <br/><br/>
-    
+    <br /><br />
+
     <label>
-       Remember me? <input type="checkbox" checked="checked" name="remember">
+      Remember me? <input type="checkbox" checked="checked" name="remember">
     </label>
-    <br/><br/>
+    <br /><br />
 
-    <span class="pword">Forgot <a href="#">password?</a></span>
+    <span class="pword">Forgot <a href="/password.html">password?</a></span>
 
 
-  
+
   </form>
   </div>
-    
+
 </body>
+
 </html>
