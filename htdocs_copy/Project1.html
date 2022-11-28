@@ -1,0 +1,192 @@
+html>
+<script>
+    function asdawda() {
+        if (
+            document.getElementById("phone").value == "" ||
+            document.getElementById("section").value == "" || document.getElementById("room").value == "" ||
+            document.getElementById("instructor_name").value == "" || document.getElementById("email").value == "") {
+            document.getElementById("message").innerHTML = "Provoded data is not complate type again"
+            return false;
+        } else
+            return true;
+    }
+</script>
+
+<head>
+    <title>Information</title>
+</head>
+
+<form action="Project1.php" method="post" onsubmit="return asdawda();">
+
+    <style>
+        .boxsize {
+            width: 175px
+        }
+        
+        body {
+            background-image: url('image2.png');
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        /*input#image-button{
+    background:  url('icon.png') no-repeat ;
+    padding-left: 16px;
+    height: 16px;
+    width:160px;
+}
+    */
+    </style>
+
+    <body>
+        <center>
+            <br><br><br><br><br><br><br><br><br><br><br>
+            <table>
+                <h2>ENTER INFORMATION</h2>
+
+                <tr>
+                    <td>
+                        <p>Enter course number:</p>
+                    </td>
+                    <td><select class="boxsize" name="course_number" name="course_number" id="course_number">
+                             <option value="CIS100" > CIS100</option>    
+                             <option value="CIS115" class="boxsize"> CIS115</option>
+                             <option value="CIS155" class="boxsize"> CIS115</option>
+                             <option value="CIS180" class="boxsize"> CIS180</option>
+                             <option value="CIS200" class="boxsize"> CIS200</option>
+                             <option value="CIS255" class="boxsize"> CIS255</option>
+                             <option value="CIS345" class="boxsize"> CIS345</option>
+                             <option value="CIS359" class="boxsize"> CIS359</option>
+                             <option value="CIS385" class="boxsize"> CIS385</option>
+                             <option value="CIS395" class="boxsize"> CIS395</option>
+                             <option value="CIS440" class="boxsize"> CIS440</option>
+                             <option value="CIS445" class="boxsize"> CIS445</option>
+                             <option value="CIS455" class="boxsize"> CIS445</option>
+                             <option value="CIS485" class="boxsize"> CIS485</option>
+                             <option value="CIS495" class="boxsize"> CIS495</option>
+                             <option value="CSC101" class="boxsize"> CSC101</option>
+                             <option value="CSC110" class="boxsize"> CSC110</option>
+                             <option value="CSC111" class="boxsize"> CSC110</option>
+
+                             <option value="CSC210" class="boxsize"> CSC210</option>
+                             <option value="CSC211" class="boxsize"> CSC211</option>
+                             <option value="CSC215" class="boxsize"> CSC215</option>
+                             <option value="CSC230" class="boxsize"> CSC230</option>
+                             <option value="CSC231" class="boxsize"> CSC231</option>
+                             <option value="CSC310" class="boxsize"> CSC310</option>
+                             <option value="CSC330" class="boxsize"> CSC330</option>
+                             <option value="CSC331" class="boxsize"> CSC331</option>
+                             <option value="CSC350" class="boxsize"> CSC350</option>
+                             <option value="CSC410" class="boxsize"> CSC410</option>
+                             <option value="CSC430" class="boxsize"> CSC430</option>
+                             <option value="GIS201" class="boxsize"> GIS201</option>
+                             <option value="GIS261" class="boxsize"> GIS261</option>
+                             <option value="GIS361" class="boxsize"> GIS361</option>
+
+                    </select></td>
+                    <tr>
+                        <td>
+                            <p>Enter title:
+
+                                <td>
+                                    <select class="boxsize " name="title" id="title "> Telecom. Networks I
+                                    <option value="Comp. Applications "> Comp. Applications</option>
+                                    <option value="Intro.Comp.Inf.Security " class="boxsize "> Intro.Comp.Inf.Security</option>
+                                    <option value="Computer Hardware " class="boxsize "> Computer Hardware</option>
+                                    <option value="Intro To Internet " class="boxsize "> Intro To Internet</option>
+                                    <option value="Intro.Info System " class="boxsize "> Intro.Info System/option>
+                                        <option value="Computer Software " class="boxsize "> Computer Software</option>
+                                        <option value="Telecom. Networks I " class="boxsize "> Telecom. Networks I</option>
+                                        <option value="Information Assurance " class="boxsize "> Information Assurance</option> 
+                                        <option value="Web Programming I " class="boxsize "> Web Programming I</option>
+                                        <option value="Database Systems I " class="boxsize "> Database Systems I</option> 
+                                        <option value="Unix " class="boxsize "> Unix</option>
+                                        <option value="Tele. Networks II " class="boxsize "> Tele. Networks II</option>
+                                        <option value="Network Security " class="boxsize "> Network Security</option>
+                                        <option value="Web Programming II " class="boxsize "> Web Programming II</option>
+                                        <option value="Database Systems II " class="boxsize "> Database Systems II</option>
+                                        <option value="Principles In Info Tech & Comp " class="boxsize "> Principles In Info Tech & Comp</option>
+                                        <option value="Comp. Programming I " class="boxsize "> Comp. Programming I</option>
+                                        <option value="Intro To Geographic Methods " class="boxsize "> Intro To Geographic Methods </option>
+                                        <option value="Comp. Prog. II " class="boxsize "> Comp. Prog. II</option>
+                                        <option value="Advanced Programming Technique " class="boxsize "> Advanced Programming Technique</option>
+                                        <option value="Fund. of Computer Systems " class="boxsize "> Fund. of Computer Systems</option>
+                                        <option value="Discrete Structures " class="boxsize "> Discrete Structures</option>
+                                        <option value="Disc Struc & Applic Comp Sci " class="boxsize "> Disc Struc & Applic Comp Sci</option>
+                                        <option value="Assem Lang & Arc I " class="boxsize "> Assem Lang & Arc I</option>
+                                        <option value="Data Structures I " class="boxsize "> Data Structures I</option>
+                                        <option value="Data Structures " class="boxsize "> Data Structures</option>
+                                        <option value="Software Development " class="Software Development "> CSC331</option>
+                                        <option value="Assem Lang & Arc II " class="boxsize "> Assem Lang & Arc II</option>
+                                        <option value="Data Structures II " class="boxsize "> Data Structures II</option>
+                                        <option value="Intro To Geographic Methods " class="boxsize "> Intro To Geographic Methods</option>
+                                        <option value="Intro To Geographic Methods " class="boxsize "> Intro To Geographic Methods</option>
+                                        <option value="Advanced Geographic Info Sci " class="boxsize "> Advanced Geographic Info Sci</option>
+                                        <option value="Assem Lang & Arc II " class="boxsize "> Assem Lang & Arc II</option>
+                                        </select>
+                            </p>
+                            </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>Enter credit number:
+
+                                <td>
+                                    <select class="boxsize " name="credits" id="credits ">
+                                    <option value="3"> 3</option>
+                                    <option value="4" class="boxsize "> 4</option>
+                                   
+                                        </select>
+                            </p>
+                            </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>Enter phone number::</p>
+                        </td>
+
+                        <td><input placeholder="917-386-3812" class="boxsize" type="tel" name="phone" required pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" id="phone" 123-123-1234 </td></tr>
+                    <tr>
+                        <td>
+                            <p>Enter section:</p>
+                        </td>
+                        <td><input class="boxsize" type="text" name="section" size="5" id="section" maxlength="4" </td> </tr>
+                    <tr>
+                        <td>
+                            <p>Enter room number:</p>
+                        </td>
+                        <td><input class="boxsize" type="text" name="room" size="20" id="room" placeholder="F-3234 or F-1233H" maxlength="7" </td></tr>
+
+                    <tr>
+                        <td>
+                            <p>Enter instructor name:</p>
+                        </td>
+                        <td><input class="boxsize" type="text" name="instructor_name" size="20" id="instructor_name" </td></tr>
+                    <tr>
+
+                        <tr>
+                            <td>
+                                <p>Enter email:</p>
+                            </td>
+                            <td><input class="boxsize" type="email" name="email" size="20" id="email" placeholder="Happy@abc.com" </td></tr>
+                        <tr>
+                            <td>
+                                <p>Enter position:
+
+                                    <td>
+                                        <select class="boxsize " name="position" name="position" id="credits ">
+                                            <option value="Faculty"> Faculty</option>
+                                            <option value="Chairperson" class="boxsize "> Chairperson</option>
+                                            <option value="Adjunct" class="boxsize "> Adjunct</option>
+                                           
+                                           
+                                                </select>
+                                </p>
+                                </td>
+                        </tr>
+            </table>
+            <td colspan="2"><input type="submit" value="submit" </td></tr>
+                <div id="message"></div>
+        </center>
+    </body>
+
+    </html>
