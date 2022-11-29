@@ -28,7 +28,7 @@ create table hours
 
 create table weekly_cal as select * from days,hours;
 alter table weekly_cal add slot_id int auto_increment primary key;
-alter table weekly_cal add apt_number varchar(10);
+alter table weekly_cal add apt_number varchar(10) references user(apt_number);
 update weekly_cal set apt_number = 0;
 
  
