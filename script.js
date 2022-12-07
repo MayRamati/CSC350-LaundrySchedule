@@ -17,3 +17,8 @@ function test() {
   console.log({ time, user, pass })
 
 }
+
+
+function myFunction() {
+  document.getElementById("demo").innerHTML = "Please reach out to your buildings management for Login credentials";
+}
